@@ -26,15 +26,16 @@ pip install -r requirements.txt
 5. Подготовьте `.env` файл для работы программы (если у вас есть доступ к БД). 
 
 ## Подготовка .env файла 
-В папке с распакованным архивом создаётся файл с название `.env` в который заполняютсяданные для подключения к базе данных, эти переменные `HOST` `PORT` `NAME` `USER` `PASSWORD` `SECRET_KEY` `DEBUG`. Последнее включает и отключает DEBUG-режим и принимает значения True и False. Должно получиться так:
+В папке с распакованным архивом создаётся файл с название `.env` в который заполняютсяданные для подключения к базе данных, эти переменные `HOST` `PORT` `NAME` `USER` `PASSWORD` `SECRET_KEY` `DEBUG`. Значение DEBUG включает и отключает DEBUG-режим и принимает значения True и False. Последнее добавляет хосты которые смогут обслуживать сайт (Можно оставить как есть). Должно получиться так:
 ```
-HOST = 'security.checkpoint.net'
-PORT = '6467'
-NAME = 'bank'
-USER = 'user'
-PASSWORD = 'miso6'
+DB_HOST = 'security.checkpoint.net'
+DB_PORT = '6467'
+DB_NAME = 'bank'
+DB_USER = 'user'
+DB_PASSWORD = 'miso6'
 SECRET_KEY = 'REPLACE_ME'
 DEBUG = False
+ALLOWED_HOSTS = '*'
 ```
 ## Запуск
 Чтобы запустить используйте в папке команду:
