@@ -49,8 +49,8 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-.pythonlibs
-.upm
+*.pythonlibs
+*.upm
 cover/
 
 # Translations
